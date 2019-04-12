@@ -1,9 +1,24 @@
 .image-slider-container
     height: 400px
 .image-slider
-    background-image: url("../../assets/cutting-board.jpg")
+    background-image: url("../../assets/food-back.jpg")
     background-repeat: no-repeat
     background-size: cover
     height: 400px
     width: 100%
     background-position: center
+    text-align: center
+    overflow: hidden
+.pizza-animation
+    -webkit-animation: spin 5000ms linear infinite
+    -moz-animation: spin 5000ms linear infinite
+    animation: spin 5000ms linear infinite
+    margin: 100px
+
+@keyframes spin
+    0%
+        transform: rotate(0deg)
+    100%
+        transform: rotate(360deg)
+        
+        
