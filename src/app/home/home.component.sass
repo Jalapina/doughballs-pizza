@@ -1,20 +1,70 @@
 .image-slider-container
-    height: 400px
+    height: 560px
 .image-slider
     background-image: url("../../assets/food-back.jpg")
     background-repeat: no-repeat
     background-size: cover
-    height: 400px
+    height: 565px
     width: 100%
     background-position: center
     text-align: center
     overflow: hidden
-.pizza-animation
-    -webkit-animation: spin 5000ms linear infinite
-    -moz-animation: spin 5000ms linear infinite
-    animation: spin 5000ms linear infinite
-    margin: 100px
+.pizza-box
+    -webkit-animation: spin 7000ms linear infinite
+    -moz-animation: spin 7000ms linear infinite
+    animation: spin 7000ms linear infinite
+    position: relative
+    bottom: 50%
+    top: 40%
+    left: 30%
+    @media screen and (max-width: 750px)
+        left: 0%
+// .pizza-box::after
+//     content: "Hi this is Doughballs!"
+//     position: absolute
+//     left: 0px
+//     right: 0px
+//     bottom: 21px
+//     top: 145px
+//     color: #fff
+//     font-size: 17px
+//     font-weight: bold
 
+.other
+    background-color: #252322
+    text-align: center
+    padding: 15px
+    background-image: linear-gradient(#252322 55%,#382E2A)
+.location-in-text
+    color: #fff
+    font-size: 30px
+    display: inline-block
+    width: 65%
+.were-in-aurora-title
+    color: #fff;
+    font-family: 'Merriweather', serif
+    font-size: 35px
+#map
+    text-align: center   
+.user-options
+    text-align: center
+.user-options, #map
+    display: inline-block
+    width: 48%
+    max-width: 500px
+    vertical-align: middle
+    @media screen and (max-width: 800px)
+        width: 100% 
+.order-online-container, .reviews
+    width: 75%
+    max-width: 325px
+    display: inline-block
+.order-title, .review-title
+    font-size: 45px
+    color: #ffffff
+    border-bottom: 1px solid
+.online-order-image
+    margin: 10px
 @keyframes spin
     0%
         transform: rotate(0deg)
