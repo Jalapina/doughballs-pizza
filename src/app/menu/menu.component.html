@@ -11,42 +11,49 @@
         <li (click)="pizza = !pizza" class="food-links pizza">
             <p class="menu-iteam">Pizza</p>
         </li>
-        <div [ngClass]="{'iteam-info-show': pizza }" class="iteam-info">
-            <p></p>
+        <div [ngClass]="{'iteam-info-show': pizza }" class="iteam-info-container">
+            <div class="iteam-info">
+                <p>14" $8.25 - or - 18" $12.25</p>
+            </div>
         </div>
         <li (click)="calzone = !calzone" class="food-links calzone"><p class="menu-iteam">Calzones</p></li>
-        <div [ngClass]="{'iteam-info-show': calzone }"  class="iteam-info">
+        <div [ngClass]="{'iteam-info-show': calzone }"  class="iteam-info-container">
                 
         </div>
         <li (click)="salad = !salad" class="food-links salad"><p class="menu-iteam">Salads</p></li>
-        <div [ngClass]="{'iteam-info-show': salad }"  class="iteam-info">
-            <p>
-                House Salad ... Iceberg lettuce, tomatos, carrots, crutons, ranch - 11.99
-            </p>
-            <p>
-                Ceaser Salad
-            </p>
+        <div [ngClass]="{'iteam-info-show': salad }"  class="iteam-info-container">
+            <div class="iteam-info">
+                <p>
+                    House Salad ... Iceberg lettuce, tomatos, onions, black olives, cheddar cheese, croutons - 4.95
+                </p>
+                <p>
+                    Ceaser Salad ... Iceberg lettuce, parmesan cheese, croutons, ceaser dressing - 4.95
+                </p>
+                <p>
+                    Add Chicken - 3.00
+                </p>
+            </div>
         </div>
         <li (click)="taco = !taco" class="food-links taco"><p class="menu-iteam">Juniors Burritos Tapatios</p></li>
-        <div [ngClass]="{'iteam-info-show': taco }"  class="iteam-info">
-                
+        <div [ngClass]="{'iteam-info-show': taco }"  class="iteam-info-container">
+            
         </div>
         <li (click)="pasta = !pasta" class="food-links pasta"><p class="menu-iteam">Pasta</p></li>
-        <div [ngClass]="{'iteam-info-show': pasta }"  class="iteam-info">
+        <div [ngClass]="{'iteam-info-show': pasta }"  class="iteam-info-container">
                 
         </div>
         <li (click)="sandwhich = !sandwhich" class="food-links burger"><p class="menu-iteam">Sandwhiches</p></li>
-        <div [ngClass]="{'iteam-info-show': sandwhich }"  class="iteam-info">
+        <div [ngClass]="{'iteam-info-show': sandwhich }"  class="iteam-info-container">
                 
         </div>
         
         <li (click)="appetizer = !appetizer" class="food-links appetizer"><p class="menu-iteam">Appetizers</p></li>
-        <div [ngClass]="{'iteam-info-show': appetizer }"  class="iteam-info">
+        <div [ngClass]="{'iteam-info-show': appetizer }"  class="iteam-info-container">
                 
         </div>
 
         <li (click)="drink = !drink" class="food-links drink"><p class="menu-iteam">Drinks</p></li>
-        <div [ngClass]="{'iteam-info-show': drink }"  class="iteam-info">
+        <div [ngClass]="{'iteam-info-show': drink }"  class="iteam-info-container">
                 
         </div>
     </ul>
