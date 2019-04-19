@@ -8,7 +8,14 @@ import { Component, OnInit } from '@angular/core';
 export class MenuComponent implements OnInit {
 
   constructor() { }
-
+  pizza: boolean = false
+  pasta: boolean = false
+  taco: boolean = false
+  calzone: boolean = false
+  salad: boolean = false
+  sandwitches: boolean = false
+  Appetizers: boolean = false
+  
   ngOnInit() {
   }
 

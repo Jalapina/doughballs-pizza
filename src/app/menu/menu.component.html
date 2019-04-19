@@ -8,34 +8,40 @@
 
 <div class="menu-container">
     <ul class="menu">
-        <li class="food-links pizza">
+        <li (click)="pizza = !pizza" class="food-links pizza">
             <p class="menu-iteam">Pizza</p>
         </li>
-        <div class="iteam-info">
+        <div [ngClass]="{'iteam-info-show': pizza }" class="iteam-info">
+            <p></p>
+        </div>
+        <li (click)="calzone = !calzone" class="food-links calzone"><p class="menu-iteam">Calzones</p></li>
+        <div [ngClass]="{'iteam-info-show': calzone }"  class="iteam-info">
                 
         </div>
-        <li class="food-links calzone"><p class="menu-iteam">Calzones</p></li>
-        <div class="iteam-info">
+        <li (click)="salad = !salad" class="food-links salad"><p class="menu-iteam">Salads</p></li>
+        <div [ngClass]="{'iteam-info-show': salad }"  class="iteam-info">
                 
         </div>
-        <li class="food-links salad"><p class="menu-iteam">Salads</p></li>
-        <div class="iteam-info">
+        <li (click)="taco = !taco" class="food-links taco"><p class="menu-iteam">Juniors Burritos Tapatios</p></li>
+        <div [ngClass]="{'iteam-info-show': taco }"  class="iteam-info">
                 
         </div>
-        <li class="food-links taco"><p class="menu-iteam">Juniors Burritos Tapatios</p></li>
-        <div class="iteam-info">
+        <li (click)="pasta = !pasta" class="food-links pasta"><p class="menu-iteam">Pasta</p></li>
+        <div [ngClass]="{'iteam-info-show': pasta }"  class="iteam-info">
                 
         </div>
-        <li class="food-links pasta"><p class="menu-iteam">Pasta</p></li>
-        <div class="iteam-info">
+        <li (click)="sandwhich = !sandwhich" class="food-links burger"><p class="menu-iteam">Sandwhiches</p></li>
+        <div [ngClass]="{'iteam-info-show': sandwhich }"  class="iteam-info">
                 
         </div>
-        <li class="food-links burger"><p class="menu-iteam">Sandwhiches</p></li>
-        <div class="iteam-info">
+        
+        <li (click)="appetizer = !appetizer" class="food-links appetizer"><p class="menu-iteam">Appetizers</p></li>
+        <div [ngClass]="{'iteam-info-show': appetizer }"  class="iteam-info">
                 
         </div>
-        <li class="food-links drink"><p class="menu-iteam">Drinks</p></li>
-        <div class="iteam-info">
+
+        <li (click)="drink = !drink" class="food-links drink"><p class="menu-iteam">Drinks</p></li>
+        <div [ngClass]="{'iteam-info-show': drink }"  class="iteam-info">
                 
         </div>
     </ul>
