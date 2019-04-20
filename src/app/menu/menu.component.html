@@ -8,19 +8,65 @@
 
 <div class="menu-container">
     <ul class="menu">
+        
         <li (click)="pizza = !pizza" class="food-links pizza">
             <p class="menu-iteam">Pizza</p>
         </li>
+
         <div [ngClass]="{'iteam-info-show': pizza }" class="iteam-info-container">
             <div class="iteam-info">
-                <p>14" $8.25 - or - 18" $12.25</p>
+                <div class="base-prices">
+                    <p>14" $8.25 - or - 18" $12.25</p>
+                    <p>Toppings</p>
+                    <p>$2.00</p>
+                </div>
+                <div class="toppings meats">
+                    <p class="topping-name">Meats</p>
+                    <p>Pepperoni</p>                   
+                    <p>Sausage</p>
+                    <p>BBQ Pork</p>
+                    <p class="long-name-shrinker">Applewood Smoked Bacon</p>
+                    <p>Chicken</p>
+                </div>
+                <div class="toppings veggies">
+                    <p class="topping-name">Veggies</p>
+                    <p>Green Peppers</p>
+                    <p>Jalapeńos</p>
+                    <p>Mushrooms</p>
+                    <p>Black Olives</p>
+                    <p>Pineapple</p>
+                    <p>Spinach</p>
+                </div>
+                <div class="toppings">
+                    <p class="topping-name">Other</p>
+                    <p>French Fries</p>
+                    <p>Pasta</p>
+                </div>
+                <div class="toppings">
+                    <p class="topping-name">Cheese</p>
+                    <p>Cheddar</p>
+                    <p class="long-name-shrinker">White Cheese Blend</p>
+                </div>
             </div>
         </div>
-        <li (click)="calzone = !calzone" class="food-links calzone"><p class="menu-iteam">Calzones</p></li>
+
+        <li (click)="calzone = !calzone" class="food-links calzone">
+            <p class="menu-iteam">Calzones</p>
+        </li>
+        
         <div [ngClass]="{'iteam-info-show': calzone }"  class="iteam-info-container">
-                
+            <p class="calzone-price">$7.25 Each</p>    
+            <div class="calzone-info">
+                <p>Time Zone</p>
+                <p>Diet Zone</p>
+                <p>Red Zone</p>
+                <p>Burger Zone</p>
+                <p>Construction</p>
+            </div>
         </div>
+
         <li (click)="salad = !salad" class="food-links salad"><p class="menu-iteam">Salads</p></li>
+
         <div [ngClass]="{'iteam-info-show': salad }"  class="iteam-info-container">
             <div class="iteam-info">
                 <p>
@@ -34,6 +80,7 @@
                 </p>
             </div>
         </div>
+
         <li (click)="taco = !taco" class="food-links taco"><p class="menu-iteam">Juniors Burritos Tapatios</p></li>
         <div [ngClass]="{'iteam-info-show': taco }"  class="iteam-info-container">
             
