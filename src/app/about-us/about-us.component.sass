@@ -12,15 +12,46 @@
     position: relative
     top: 50%
     display: inline-block
-    width: 70%
+    max-width: 410px
+    font-size: 24px
+    padding: 15px
 .attention-grabber
     color: #fff
+    text-transform: capitalize
 .about-us-statement
     background: #fff
-    width: 80%
     display: inline-block
     font-size: 25px
+    padding: 15px
 .about-us
-    background: darkcyan
-    padding: 5px
+    background: #f9b919
     text-align: center
+.our-goal
+    font-size: 25px
+    text-transform: capitalize
+    padding: 15px
+.our-goal-first-statement
+    font-size: 35px
+.pizza, .illegal
+    color: #fff
+    font-weight: bold
+    text-transform: uppercase
+.illegal
+    color: red
+.background-image, .background-image-two, .background-image-three, .background-image-four
+    background-image: url("../../assets/pizzatime.jpg")
+    min-height: 280px 
+    background-attachment: fixed
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    @media screen and (max-width: 750px)
+        background-attachment: unset
+.background-image
+    min-height: 200px
+.background-image-two
+    background-image: url("../../assets/hog-heaven-pizza.jpg")
+.background-image-three
+    background-image: url("../../assets/buff-off-pizza.jpg")
+.background-image-four
+    background-image: url("../../assets/fries-pizza.jpg")

@@ -26,6 +26,7 @@ const routes: Routes = [
     pathMatch: 'full',
     component: GalleryComponent,
   },
+  { path: '**', redirectTo: '/'},
 ];
 
 @NgModule({

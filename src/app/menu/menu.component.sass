@@ -49,6 +49,7 @@
     margin: auto
     opacity: 0
     display: none
+    transition-property: 2s ease-in-out
 .iteam-info
     text-align: center
 .iteam-info-show
@@ -74,6 +75,19 @@
 .calzone-price
     text-align: center
     font-size: 30px
+.calzone-types
+    display: inline-block
+    width: 30%
+    margin: 5px
+    vertical-align: top
+    >p:first-child
+        font-size: 30px
+    >p:not(:first-child)
+        border-bottom: 1px solid #000000
+.calzone-info
+    text-align: center
+.calzone-construction
+    text-align: center
 .pizza
     background-image: url("../../assets/pizzatime.jpg")
     background-position: center

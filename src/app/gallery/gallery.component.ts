@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class GalleryComponent implements OnInit {
 
   constructor() { }
+  
+  imageUrlArray = ["../../assets/calzone.jpg","../../assets/burger.jpg","../../assets/food-back.jpg"]
 
   ngOnInit() {
   }
