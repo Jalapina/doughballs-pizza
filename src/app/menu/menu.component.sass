@@ -24,10 +24,8 @@
     background-color: #fff
 .menu-container
     background-color: #2d2d2c
-
 .header-fusion
     height: 500px
-
 .food-links
     display: inline-block
     padding: 10px
@@ -52,14 +50,14 @@
     transition-property: 2s ease-in-out
 .iteam-info
     text-align: center
+    >p:nth-child(3)
+        margin: 10px
 .iteam-info-show
     height: auto
     padding: 10px
-    text-align: left
     opacity: 1
     display: block
 .base-prices
-    background: sandybrown
     text-align: center
 .toppings
     display: inline-block
@@ -88,35 +86,60 @@
     text-align: center
 .calzone-construction
     text-align: center
-.pizza
+.construction
+    font-size: 30px
+.construction-type
+    display: inline-block
+    vertical-align: top
+    margin: 5px
+    >p:first-child
+        font-size: 30px
+    >p:not(:first-child)
+        border-bottom: 1px solid #000000
+.specialty-pizza-name
+    margin: 5px
+    display: inline-block
+    vertical-align: top
+    >p:first-child
+        font-size: 30px
+    >p:not(:first-child)
+        border-bottom: 1px solid #000000
+.can-sode-price
+    font-size: 25px
+.salad-info
+    display: inline-block
+    width: 50%
+    vertical-align: top
+    >p:first-child
+        font-size: 30px
+    >p:not(:first-child):not(:nth-child(2))
+        border-bottom: 1px solid #000000
+.tapatios-info
+    display: inline-block
+    margin: 5px
+    vertical-align: top
+    width: 25%
+    background: tomato
+    margin: 10px
+.pizza, .taco, .salad, .burger, .pasta, .appetizer, .drink, .wing, .supreme-pizza
     background-image: url("../../assets/pizzatime.jpg")
     background-position: center
     background-size: cover
 .taco
     background-image: url("../../assets/tacos.jpg")
-    background-position: center
-    background-size: cover
 .salad
     background-image: url("../../assets/salad.jpg")
-    background-position: center
-    background-size: cover
 .burger
     background-image: url("../../assets/burger.jpg")
-    background-position: center
-    background-size: cover
 .calzone
     background-image: url("../../assets/calzone.jpg")
-    background-position: center
-    background-size: cover
 .pasta
     background-image: url("../../assets/pasta.jpeg")
-    background-position: center
-    background-size: cover
 .appetizer
     background-image: url("../../assets/bosco-sticks.jpg")
-    background-position: center
-    background-size: cover
 .drink
     background-image: url("../../assets/drinks.jpg")
-    background-position: center
-    background-size: cover
+.wing
+    background-image: url("../../assets/wings.jpg")
+.supreme-pizza
+    background-image: url("../../assets/pizza-3007395_640.jpg")

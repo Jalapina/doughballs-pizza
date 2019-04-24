@@ -25,12 +25,18 @@
                     <p>Pepperoni</p>                   
                     <p>Sausage</p>
                     <p>BBQ Pork</p>
+                    <p>Ground Beef</p>
                     <p class="long-name-shrinker">Applewood Smoked Bacon</p>
                     <p>Chicken</p>
+                    <p>Italian Beef - $3.00</p>                    
                 </div>
                 <div class="toppings veggies">
                     <p class="topping-name">Veggies</p>
                     <p>Green Peppers</p>
+                    <p>Onions</p>
+                    <p>Caramelized Onions</p>
+                    <p>Garlic</p>
+                    <p>Tomatoe</p>
                     <p>Jalapeńos</p>
                     <p>Mushrooms</p>
                     <p>Black Olives</p>
@@ -50,6 +56,90 @@
             </div>
         </div>
 
+        <li (click)="supremePizza = !supremePizza" class="food-links supreme-pizza">
+            <p class="menu-iteam">Specialty Pizza's</p>
+        </li>
+    
+        <div [ngClass]="{'iteam-info-show': supremePizza }" class="iteam-info-container">
+            <div class="iteam-info">
+                <div class="base-prices">
+                    <p>14" $15.95 - or - 18" $19.95</p>
+                </div>
+                <div class="specialty-pizza-kind">
+                    <div class="specialty-pizza-name">
+                        <p>Buff Off<p>
+                        <p>Buffalo Sauce</p>
+                        <p>Chicken</p>
+                        <p>Blue Cheese</p>
+                        <p>Topped with Buffalo Sauce</p>
+                    </div>
+                    <div class="specialty-pizza-name">
+                        <p>Supreme Pizza<p>
+                        <p>Sausage</p>
+                        <p>Pepperoni</p>
+                        <p>Mushrooms</p>
+                        <p>Red Onions</p>
+                        <p>Green Peppers</p>
+                        <p>Black Olives</p>
+                    </div>
+                    <div class="specialty-pizza-name">
+                        <p>Hawaiian Pizza<p>
+                        <p>Bacon</p>
+                        <p>Pineapple</p>
+                    </div>
+                    <div class="specialty-pizza-name">
+                        <p>Veggie Monster<p>
+                        <p>Spinach</p>
+                        <p>Mushrooms</p>
+                        <p>Tomatoes</p>
+                        <p>Red Onions</p>
+                        <p>Roasted Red Peppers</p>
+                        <p>With our Special Red Sauce</p>
+                    </div>
+                    <div class="specialty-pizza-name">
+                        <p>Hog Heaven<p>
+                        <p>BBQ Pork</p>
+                        <p>Bacon</p>
+                        <p>Cheese and Motzeralla</p>
+                        <p>Red Onions</p>
+                        <p>Topped With BBQ and Ranch</p>
+                    </div>
+                    <div class="specialty-pizza-name">
+                        <p>Mac n' Cheese<p>
+                        <p>Mac n' Cheese</p>
+                        <p>Topped With cheddar and Motzeralla</p>
+                    </div>
+                    <div class="specialty-pizza-name">
+                        <p>Unicorns Revenge<p>
+                        <p>Bacon</p>
+                        <p>Sausage</p>
+                        <p>Pepperoni</p>
+                        <p>Pork</p>
+                        <p>Special Red Sauce</p>
+                        <p>Topped with Cheese Blend</p>
+                    </div>
+                    <div class="specialty-pizza-name">
+                        <p>Philanator<p>
+                        <p>Philly cheese steak</p>
+                        <p>Motzeralla</p>
+                        <p>Red Peppers</p>
+                        <p>French Fries</p>
+                        <p>Onions</p>
+                        <p>Grilled Onions</p>
+                        <p>Nacho Cheese Dripping Sauce</p>
+                    </div>
+                    <div class="specialty-pizza-name">
+                        <p>Mr. Potato Head<p>
+                        <p>Bacon</p>
+                        <p>Cheddar</p>
+                        <p>Potato</p>
+                        <p>Onions</p>
+                        <p>Side of Sour Cream</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <li (click)="calzone = !calzone" class="food-links calzone">
             <p class="menu-iteam">Calzones</p>
         </li>
@@ -57,35 +147,41 @@
         <div [ngClass]="{'iteam-info-show': calzone }"  class="iteam-info-container">
             <p class="calzone-price">$7.25 Each</p>    
             <div class="calzone-info">
-                <div class="calzone-types"><p>Time Zone</p> <p>Grilled Chicken</p> <p>Bacon</p><p>Mozzarella Cheese</p><p>Diced Tomatos</p><p>marinera sauce</p></div>
-                <div class="calzone-types"><p>Diet Zone</p> <p>Spinach</p> <p>Mozzarella</p> <p>Black Olives</p><p>Marinera Sauce</p></div>
+                <div class="calzone-types"><p>Time Zone</p> <p>Grilled Chicken</p> <p>Bacon</p><p>Mozzarella Cheese</p><p>Diced Tomatos</p><p>Red sauce</p></div>
+                <div class="calzone-types"><p>Diet Zone</p> <p>Spinach</p> <p>Mozzarella</p> <p>Black Olives</p><p>Red Sauce</p></div>
                 <div class="calzone-types"><p>Red Zone</p> <p>Grilled Chicken</p> <p>Buffalo Sauce</p> <p>Mozzarella Cheese</p> <p>Ranch</p></div>
-                <div class="calzone-types"><p>End Zone</p> <p>Seared Steak</p> <p>Green Peppers</p> <p>Onions</p> <p>Marinera Sauce</p> <p>Ranch</p></div>
-                <div class="calzone-types"><p>Burger Zone</p> <p>1/2 lb Angus</p> <p>Marinera</p> <p>Cheddar</p> <p>Mozzarella</p> <p>Pepperoni</p><p>Bacon</p></div>
+                <div class="calzone-types"><p>End Zone</p> <p>Seared Steak</p> <p>Green Peppers</p> <p>Onions</p> <p>Red Sauce</p> <p>Ranch</p></div>
+                <div class="calzone-types"><p>Burger Zone</p> <p>1/2 lb Angus</p> <p>Red sauce</p> <p>Cheddar</p> <p>Mozzarella</p> <p>Pepperoni</p><p>Bacon</p></div>
             </div>
             <div class="calzone-construction">
-                <p>Construction</p>
-                <p>Meat</p>
-                <p>Chicken</p>
-                <p>Applewood-Smoked Bacon</p>
-                <p>BBQ Pork</p>
-                <p>Pepperoni</p>
-                <p>Veggies</p>
-                <p>Tomatoes</p>
-                <p>Jalapenos</p>
-                <p>Spinach</p>
-                <p>Roasted Garlic</p>
-                <p>Red Peppers</p>
-                <p>Red Onion</p>
-                <p>Zucchini</p>
-                <p>Black Olives</p>
-                <p>Green Peppers</p>
-                <p>Caramelized Onions</p>
-                <p>Mushrooms</p>
-                <p>Pineapple</p>
-                <p>Cheese</p>
-                <p>Cheddar Cheese</p>
-                <p>White Cheese Blend</p>
+                <p class="construction">Construction</p>
+                <p>Limit 4 ingredients</p>
+                <div class="construction-type">
+                    <p>Meat</p>
+                    <p>Chicken</p>
+                    <p class="long-name-shrinker">Applewood Smoked Bacon</p>
+                    <p>BBQ Pork</p>
+                    <p>Pepperoni</p>
+                </div>
+                <div class="construction-type">
+                    <p>Veggies</p>
+                    <p>Tomatoes</p>
+                    <p>Jalapenos</p>
+                    <p>Spinach</p>
+                    <p>Roasted Garlic</p>
+                    <p>Red Peppers</p>
+                    <p>Red Onion</p>
+                    <p>Black Olives</p>
+                    <p>Green Peppers</p>
+                    <p>Caramelized Onions</p>
+                    <p>Mushrooms</p>
+                    <p>Pineapple</p>
+                </div>
+                <div class="construction-type">
+                    <p>Cheese</p>
+                    <p class="long-name-shrinker">Cheddar Cheese</p>
+                    <p class="long-name-shrinker"> White Cheese Blend</p>
+                </div>
             </div>
         </div>
 
@@ -93,25 +189,35 @@
 
         <div [ngClass]="{'iteam-info-show': salad }"  class="iteam-info-container">
             <div class="iteam-info">
-                <p>
-                    House Salad ... Iceberg lettuce, tomatos, onions, black olives, cheddar cheese, croutons - 4.95
-                </p>
-                <p>
-                    Ceaser Salad ... Iceberg lettuce, parmesan cheese, croutons, ceaser dressing - 4.95
-                </p>
-                <p>
-                    Add Chicken - 3.00
-                </p>
+                <div class="salad-info">
+                    <p>House Salad</p> <p>$4.95</p> <p>Iceberg lettuce</p> <p>tomatos</p> <p>onions</p> <p>black olives</p> <p>cheddar cheese</p> <p>croutons $ 4.95</p>
+                </div>
+                <div class="salad-info">
+                    <p>Ceaser Salad</p> <p>$4.95</p> <p>Romain lettuce</p> <p>ivarmesan cheese</p> <p>croutons</p> <p>ceaser dressing</p>
+                </div>
+                <p>Add Chicken - $3.00</p>
             </div>
         </div>
 
         <li (click)="taco = !taco" class="food-links taco"><p class="menu-iteam">Juniors Burritos Tapatios</p></li>
         <div [ngClass]="{'iteam-info-show': taco }"  class="iteam-info-container">
-            <p>Tacos: Onions and Cilantro</p>
-            <p>Burrito: lettuce, Pico De Gallo, Mozzarella Cheese</p>
-            <p>Quesadilla: lettuce, Pico De Gallo, Sour Cream, Mozzarella Cheese</p>
-            <p>Nachos:</p>
-            <p>Nachos Special: Cheese, Mixed Cheese, Pico De Gallo, lettuce</p>
+            <div class="tapatios-info">
+                <p>Tacos</p> <p>Onions and Cilantro</p>
+            </div>
+            <div class="tapatios-info">
+                <p>Burrito</p><p>lettuce</p><p> Pico De Gallo</p><p> Sour Cream</p><p> Mozzarella Cheese</p>
+            </div>
+            <div class="tapatios-info">
+                <p>Quesadilla</p><p> lettuce</p><p> Pico De Gallo</p> <p>Sour Cream</p><p> Mozzarella Cheese</p>
+            </div>
+            <div class="tapatios-info">
+                <p>Nachos</p>
+                <p> Cheese</p> 
+                <p>Mixed Cheese</p> 
+                <p>Pico De Gallo</p>
+                <p>lettuce </p> 
+                <p> meat for $3.00</p>
+            </div>
             <p>MEATS: Steak, Chicken, Ground Beef</p>
         </div>
         <li (click)="pasta = !pasta" class="food-links pasta"><p class="menu-iteam">Pasta</p></li>
@@ -144,26 +250,40 @@
             <p>Mozzarella Sticks</p>
             <p>Fried Mushrooms</p>
         </div>
+        <li (click)="wing = !wing" class="food-links wing"><p class="menu-iteam">Wings</p></li>
+        <div [ngClass]="{'iteam-info-show': wing }"  class="iteam-info-container">
+            <div class="wing-prices">
+                <p>
+                    Sauces: BBQ - Spicy BBQ - Garlic Paramesan - Buffalo - Dry Rub
+                </p>
+                <p>6 Wings - $5.95</p>
+                <p>12 Wings - $11.95</p>
+                <p>18 Wings - $16.95</p>
+                <p>25 Wings - $19.95</p>
+            </div>
+        </div>
 
         <li (click)="drink = !drink" class="food-links drink"><p class="menu-iteam">Drinks</p></li>
         <div [ngClass]="{'iteam-info-show': drink }"  class="iteam-info-container">
-            <div class="can-sode-price">
-                <p>- CANS -</p>
-                <p>$1.00</p>
+            <div class="drinks-container">
+                <p class="can-sode-price">- CANS -</p>
+                <p class="can-sode-price">$1.00</p>
+                <p>Pepsi</p>
+                <p>Diet Pepsi</p>
+                <p>Mt Dew</p>
+                <p>Sierra Mist</p>
+                <p>A&W Root Beer</p>
+                <p>Crush Orange</p>
             </div>
-            <p>Pepsi</p>
-            <p>Diet Pepsi</p>
-            <p>Mt Dew</p>
-            <p>Sierra Mist</p>
-            <p>A&W Root Beer</p>
-            <p>Crush Orange</p>
-            <div class="two-liter">
+            
+            <div class="drinks-container">
                 <p>- 2 Liter -</p>
                 <p>$3.00</p>
+                <p>Pepsi</p>
+                <p>Diet Pepsi</p>
+                <p>Mt Dew</p>
             </div>
-            <p>Pepsi</p>
-            <p>Diet Pepsi</p>
-            <p>Mt Dew</p>
+            
         </div>
     </ul>
 </div>
