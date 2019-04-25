@@ -54,6 +54,11 @@
                     <p class="long-name-shrinker">White Cheese Blend</p>
                 </div>
             </div>
+            <div class="gluten-free">
+                <p>- Gluten Free -</p>
+                <p>Pizza $8.95 - Specialty $12.95</p>
+                <p>$1.00 Toppings</p>
+            </div>
         </div>
 
         <li (click)="supremePizza = !supremePizza" class="food-links supreme-pizza">
@@ -93,7 +98,6 @@
                         <p>Mushrooms</p>
                         <p>Tomatoes</p>
                         <p>Red Onions</p>
-                        <p>Roasted Red Peppers</p>
                         <p>With our Special Red Sauce</p>
                     </div>
                     <div class="specialty-pizza-name">
@@ -122,7 +126,6 @@
                         <p>Philanator<p>
                         <p>Philly cheese steak</p>
                         <p>Motzeralla</p>
-                        <p>Red Peppers</p>
                         <p>French Fries</p>
                         <p>Onions</p>
                         <p>Grilled Onions</p>
@@ -169,7 +172,6 @@
                     <p>Jalapenos</p>
                     <p>Spinach</p>
                     <p>Roasted Garlic</p>
-                    <p>Red Peppers</p>
                     <p>Red Onion</p>
                     <p>Black Olives</p>
                     <p>Green Peppers</p>
@@ -202,53 +204,109 @@
         <li (click)="taco = !taco" class="food-links taco"><p class="menu-iteam">Juniors Burritos Tapatios</p></li>
         <div [ngClass]="{'iteam-info-show': taco }"  class="iteam-info-container">
             <div class="tapatios-info">
-                <p>Tacos</p> <p>Onions and Cilantro</p>
+                <p>Tacos</p>
+                <p>$2.25</p>
+                <p>Onions and Cilantro</p>
             </div>
             <div class="tapatios-info">
-                <p>Burrito</p><p>lettuce</p><p> Pico De Gallo</p><p> Sour Cream</p><p> Mozzarella Cheese</p>
+                <p>Burrito</p>
+                <p>$6.25</p>
+                <p>lettuce</p>
+                <p>Pico De Gallo</p>
+                <p>Sour Cream</p>
+                <p>Mozzarella Cheese</p>
             </div>
             <div class="tapatios-info">
-                <p>Quesadilla</p><p> lettuce</p><p> Pico De Gallo</p> <p>Sour Cream</p><p> Mozzarella Cheese</p>
+                <p>Quesadilla</p>
+                <p>$3.25</p>
+                <p>lettuce</p>
+                <p>Pico De Gallo</p> 
+                <p>Sour Cream</p>
+                <p>Mozzarella Cheese</p>
             </div>
             <div class="tapatios-info">
                 <p>Nachos</p>
-                <p> Cheese</p> 
+                <p>$6.25</p>
+                <p>Cheese</p> 
                 <p>Mixed Cheese</p> 
                 <p>Pico De Gallo</p>
                 <p>lettuce </p> 
-                <p> meat for $3.00</p>
+                <p>meat for $3.00</p>
             </div>
-            <p>MEATS: Steak, Chicken, Ground Beef</p>
+            <p class="tapatios-meats">- Steak, Chicken, Ground Beef -</p>
+            <p class="tapatios-meats">- Side of Sour Cream or Salsa Verde (HOT! HOT!) -</p>
         </div>
         <li (click)="pasta = !pasta" class="food-links pasta"><p class="menu-iteam">Pasta</p></li>
         <div [ngClass]="{'iteam-info-show': pasta }"  class="iteam-info-container">
-            <p>Mac & Cheese</p>
-            <p>Mostaccioli</p>
-            <p>Spaghetti</p>
-            <p>Fettuccine Special Alfredo</p>
+            <div class="pasta-info">
+                <p>Mac & Cheese</p>
+                <p>$7.95</p>
+                <p>Yummy Homemade Cheese Sauce</p>
+            </div>
+            <div class="pasta-info">
+                <p>Mostaccioli or Spaghetti</p>
+                <p>$7.95</p>
+                <p>Marinera</p>
+                <p>- Chicken - $3.00 - MeatBalls -</p>
+            </div>
+            <div class="pasta-info">
+                <p>Fettuccine Special</p>
+                <p>$7.95</p>
+                <p>Creamy Homemade Fettuccine alfredo Sauce</p>
+                <p>MMM MAMA MIA THATS GOOD!</p>
+            </div>
         </div>
         <li (click)="sandwhich = !sandwhich" class="food-links burger"><p class="menu-iteam">Sandwhiches</p></li>
         <div [ngClass]="{'iteam-info-show': sandwhich }"  class="iteam-info-container">
-            <p>Hamburger</p>
-            <p>Chicken Breast</p>
-            <p>Beef</p>
-            <p>Pull Pork</p>
-            <p>Chicken Tenders</p>
-            <p>MeatBalls</p>
+            <div class="sandwhich-info">
+                <p>Hamburger</p>
+                <p>$7.25</p>
+                <p>lettuce</p>
+                <p>Tomatoe</p>
+                <p>Toasted Bun</p>
+                <p>- Option of Cheese -</p>
+            </div>
+            <div class="sandwhich-info">
+                <p>Chicken Breast</p>
+                <p>$7.95</p>
+                <p>lettuce</p>
+                <p>Tomatoe</p>
+            </div>
+            <div class="sandwhich-info">
+                <p>Beef</p>
+                <p>$7.95</p>
+                <p>- Plain -</p>
+                <p>or</p>
+                <p>Choice of Cheese</p>
+                <p>Sweet Peppers or Hot Peppers</p>
+            </div>
+            <div class="sandwhich-info">
+                <p>Pull Pork</p>
+                <p>$7.95</p>
+                <p>Homemade Smoked Pork</p>
+                <p>Our Secret BBQ sauce yum yum!</p>
+            </div>
+            <div class="sandwhich-info">
+                <p>MeatBalls</p>
+                <p>$7.45</p>
+                <p>- Plain -</p>
+                <p>or</p>
+                <p>Cheese</p>
+                <p>Sweet Peppers</p>
+            </div>
         </div>
         
-        <li (click)="appetizer = !appetizer" class="food-links appetizer"><p class="menu-iteam">Appetizers</p></li>
-        <div [ngClass]="{'iteam-info-show': appetizer }"  class="iteam-info-container">
-            <p>Garlic Bread</p>
-            <p>Cheese Bread</p>
-            <p>Bosco Sticks</p>
-            <p>Fried Pickles</p>
-            <p>Jalapeńos Peppers</p>
-            <p>Doughballs</p>
-            <p>Mac'n Cheese Bites</p>
-            <p>Loaded Pizza Fries</p>
-            <p>Mozzarella Sticks</p>
-            <p>Fried Mushrooms</p>
+        <li (click)="appetizer = !appetizer" class="food-links appetizer"><p class="menu-iteam">Start It Up</p></li>
+        <div [ngClass]="{'iteam-info-show': appetizer }"  class="iteam-info-container appetizer-info">
+            <p>Garlic Bread $5.95</p>
+            <p>Cheese Bread $6.95</p>
+            <p>Bosco Sticks $7.95</p>
+            <p>Fried Pickles $6.95</p>
+            <p>Jalapeńos Peppers $5.95</p>
+            <p>Doughballs $5.95</p>
+            <p>Mac'n Cheese Bites $6.95</p>
+            <p>Loaded Pizza Fries $7.95</p>
+            <p>Mozzarella Sticks $5.95</p>
         </div>
         <li (click)="wing = !wing" class="food-links wing"><p class="menu-iteam">Wings</p></li>
         <div [ngClass]="{'iteam-info-show': wing }"  class="iteam-info-container">
@@ -277,8 +335,8 @@
             </div>
             
             <div class="drinks-container">
-                <p>- 2 Liter -</p>
-                <p>$3.00</p>
+                <p class="can-sode-price">- 2 Liter -</p>
+                <p class="can-sode-price">$3.00</p>
                 <p>Pepsi</p>
                 <p>Diet Pepsi</p>
                 <p>Mt Dew</p>
