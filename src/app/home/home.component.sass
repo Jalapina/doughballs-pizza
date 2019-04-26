@@ -10,16 +10,44 @@
     text-align: center
     overflow: hidden
 .pizza-box
+    position: relative
+    top: 40%
+    padding: 5px
+.pizza-animation
     -webkit-animation: spin 7000ms linear infinite
     -moz-animation: spin 7000ms linear infinite
     animation: spin 7000ms linear infinite
-    position: relative
-    bottom: 50%
-    top: 40%
-    left: 30%
+    height: 275px
     @media screen and (max-width: 750px)
-        left: 0%
-        top: 46%
+        height: 200px
+.slide
+    position: absolute
+    color: #fff
+    animation-duration: 15s
+    animation-timing-function: ease-in-out
+    animation-iteration-count: infinite
+    pointer-events: none
+    margin: auto
+    left: 0
+    right: 0
+    width: 70%
+.slide-1
+    animation-name: slide1
+.slide-2
+    animation-name: slide2
+.slide-3
+    animation-name: slide3   
+.home-intro
+    display: inline-block
+    width: 35%
+    vertical-align: top
+    @media screen and (max-width: 750px)
+        width: 70% !important
+.home-intro-text
+    padding: 20px
+    font-size: 25px
+    color: #ffffff
+    height: 80px
 .other
     background-color: #252322
     text-align: center
@@ -74,4 +102,33 @@
     100%
         transform: rotate(360deg)
         
-        
+@keyframes slide1
+    0%, 13%
+        left: -100%
+        opacity: 0
+    13%, 18%
+        left: 0%
+        opacity: 1
+    61.33%,100%
+        left: -50%
+        opacity: 0
+@keyframes slide2
+    0%, 33.33%
+        left: -100%
+        opacity: 0
+    41.63%, 60%
+        left: 0%
+        opacity: 1
+    66.66%, 100% 
+        left: -50%
+        opacity: 0
+@keyframes slide3
+    0%, 66.66% 
+        left: -100%
+        opacity: 0
+    74.96%, 91.62%
+        left: 0%
+        opacity: 1
+    100%
+        left: -50%
+        opacity: 0
