@@ -16,7 +16,7 @@
         <div [ngClass]="{'iteam-info-show': pizza }" class="iteam-info-container">
             <div class="iteam-info">
                 <div class="base-prices">
-                    <p>14" $8.25 - or - 18" $12.25</p>
+                    <p>14" $9.00 - or - 18" $13.00</p>
                     <p>Toppings</p>
                     <p>$2.00</p>
                 </div>
@@ -56,7 +56,7 @@
             </div>
             <div class="gluten-free">
                 <p>- Gluten Free -</p>
-                <p>Pizza $8.95 - Specialty $12.95</p>
+                <p>Pizza $10.95 - Specialty $12.95</p>
                 <p>$1.00 Toppings</p>
             </div>
         </div>
@@ -68,15 +68,15 @@
         <div [ngClass]="{'iteam-info-show': supremePizza }" class="iteam-info-container">
             <div class="iteam-info">
                 <div class="base-prices">
-                    <p>14" $15.95 - or - 18" $19.95</p>
+                    <p>14" $16.95 - or - 18" $20.95</p>
                 </div>
                 <div class="specialty-pizza-kind">
                     <div class="specialty-pizza-name">
                         <p>Buff Off<p>
                         <p>Buffalo Sauce</p>
                         <p>Chicken</p>
-                        <p>Blue Cheese</p>
                         <p>Topped with Buffalo Sauce</p>
+                        <p>Side of Ranch</p>
                     </div>
                     <div class="specialty-pizza-name">
                         <p>Supreme Pizza<p>
@@ -148,7 +148,7 @@
         </li>
         
         <div [ngClass]="{'iteam-info-show': calzone }"  class="iteam-info-container">
-            <p class="calzone-price">$7.25 Each</p>    
+            <p class="calzone-price">$10.25 Each</p>    
             <div class="calzone-info">
                 <div class="calzone-types"><p>Time Zone</p> <p>Grilled Chicken</p> <p>Bacon</p><p>Mozzarella Cheese</p><p>Diced Tomatos</p><p>Red sauce</p></div>
                 <div class="calzone-types"><p>Diet Zone</p> <p>Spinach</p> <p>Mozzarella</p> <p>Black Olives</p><p>Red Sauce</p></div>
@@ -192,16 +192,16 @@
         <div [ngClass]="{'iteam-info-show': salad }"  class="iteam-info-container">
             <div class="iteam-info">
                 <div class="salad-info">
-                    <p>House Salad</p> <p>$4.95</p> <p>Iceberg lettuce</p> <p>tomatos</p> <p>onions</p> <p>black olives</p> <p>cheddar cheese</p> <p>croutons $ 4.95</p>
+                    <p>House Salad</p> <p>$8.95</p> <p>Iceberg lettuce</p> <p>tomatos</p> <p>onions</p> <p>black olives</p> <p>cheddar cheese</p> <p>croutons $ 4.95</p>
                 </div>
                 <div class="salad-info">
-                    <p>Ceaser Salad</p> <p>$4.95</p> <p>Romain lettuce</p> <p>ivarmesan cheese</p> <p>croutons</p> <p>ceaser dressing</p>
+                    <p>Ceaser Salad</p> <p>$7.95</p> <p>Romain lettuce</p> <p>ivarmesan cheese</p> <p>croutons</p> <p>ceaser dressing</p>
                 </div>
                 <p>Add Chicken - $3.00</p>
             </div>
         </div>
 
-        <li (click)="taco = !taco" class="food-links taco"><p class="menu-iteam">Juniors Burritos Tapatios</p></li>
+        <li (click)="taco = !taco" class="food-links taco"><p class="menu-iteam juniors-tapatios">Juniors Tapatios</p></li>
         <div [ngClass]="{'iteam-info-show': taco }"  class="iteam-info-container">
             <div class="tapatios-info">
                 <p>Tacos</p>
@@ -231,7 +231,7 @@
                 <p>Mixed Cheese</p> 
                 <p>Pico De Gallo</p>
                 <p>lettuce </p> 
-                <p>meat for $3.00</p>
+                <p>Add meat for $3.00</p>
             </div>
             <p class="tapatios-meats">- Steak, Chicken, Ground Beef -</p>
             <p class="tapatios-meats">- Side of Sour Cream or Salsa Verde (HOT! HOT!) -</p>
@@ -259,54 +259,59 @@
         <li (click)="sandwhich = !sandwhich" class="food-links burger"><p class="menu-iteam">Sandwhiches</p></li>
         <div [ngClass]="{'iteam-info-show': sandwhich }"  class="iteam-info-container">
             <div class="sandwhich-info">
-                <p>Hamburger</p>
-                <p>$7.25</p>
+                <p>Hamburger </p>
+                <p>$9.45</p>
                 <p>lettuce</p>
                 <p>Tomatoe</p>
                 <p>Toasted Bun</p>
                 <p>- Option of Cheese -</p>
+                <p>w/Fries</p>
             </div>
             <div class="sandwhich-info">
-                <p>Chicken Breast</p>
-                <p>$7.95</p>
+                <p>Chicken Breast </p>
+                <p>$9.45</p>
                 <p>lettuce</p>
                 <p>Tomatoe</p>
+                <p>w/Fries</p>
             </div>
             <div class="sandwhich-info">
-                <p>Beef</p>
-                <p>$7.95</p>
+                <p>Beef </p>
+                <p>$9.45</p>
                 <p>- Plain -</p>
                 <p>or</p>
                 <p>Choice of Cheese</p>
                 <p>Sweet Peppers or Hot Peppers</p>
+                <p>w/Fries</p>
             </div>
             <div class="sandwhich-info">
-                <p>Pull Pork</p>
-                <p>$7.95</p>
+                <p>Pull Pork </p>
+                <p>$9.45</p>
                 <p>Homemade Smoked Pork</p>
                 <p>Our Secret BBQ sauce yum yum!</p>
+                <p>w/Fries</p>
             </div>
             <div class="sandwhich-info">
-                <p>MeatBalls</p>
-                <p>$7.45</p>
+                <p>MeatBalls </p>
+                <p>$9.45</p>
                 <p>- Plain -</p>
                 <p>or</p>
                 <p>Cheese</p>
                 <p>Sweet Peppers</p>
+                <p>w/Fries</p>
             </div>
         </div>
         
         <li (click)="appetizer = !appetizer" class="food-links appetizer"><p class="menu-iteam">Start It Up</p></li>
         <div [ngClass]="{'iteam-info-show': appetizer }"  class="iteam-info-container appetizer-info">
-            <p>Garlic Bread $5.95</p>
-            <p>Cheese Bread $6.95</p>
+            <p>Garlic Bread $6.95</p>
+            <p>Cheese Bread $7.95</p>
             <p>Bosco Sticks $7.95</p>
-            <p>Fried Pickles $6.95</p>
-            <p>Jalapeńos Peppers $5.95</p>
-            <p>Doughballs $5.95</p>
-            <p>Mac'n Cheese Bites $6.95</p>
+            <p>Fried Pickles $8.95</p>
+            <p>Jalapeńos Peppers $7.95</p>
+            <p>Doughballs $7.95</p>
+            <p>Mac'n Cheese Bites $7.95</p>
             <p>Loaded Pizza Fries $7.95</p>
-            <p>Mozzarella Sticks $5.95</p>
+            <p>Mozzarella Sticks $6.95</p>
         </div>
         <li (click)="wing = !wing" class="food-links wing"><p class="menu-iteam">Wings</p></li>
         <div [ngClass]="{'iteam-info-show': wing }"  class="iteam-info-container">
@@ -336,10 +341,11 @@
             
             <div class="drinks-container">
                 <p class="can-sode-price">- 2 Liter -</p>
-                <p class="can-sode-price">$3.00</p>
+                <p class="can-sode-price">$3.50</p>
                 <p>Pepsi</p>
                 <p>Diet Pepsi</p>
                 <p>Mt Dew</p>
+                <p>Sierra Mist</p>
             </div>
             
         </div>
