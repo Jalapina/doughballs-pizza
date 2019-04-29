@@ -51,7 +51,7 @@
                 <div class="toppings">
                     <p class="topping-name">Cheese</p>
                     <p>Cheddar</p>
-                    <p class="long-name-shrinker">White Cheese Blend</p>
+                    <p>Mozzarella</p>
                 </div>
             </div>
             <div class="gluten-free">
@@ -148,7 +148,7 @@
         </li>
         
         <div [ngClass]="{'iteam-info-show': calzone }"  class="iteam-info-container">
-            <p class="calzone-price">$10.25 Each</p>    
+            <p class="calzone-price">$9.25 Each</p>    
             <div class="calzone-info">
                 <div class="calzone-types"><p>Time Zone</p> <p>Grilled Chicken</p> <p>Bacon</p><p>Mozzarella Cheese</p><p>Diced Tomatos</p><p>Red sauce</p></div>
                 <div class="calzone-types"><p>Diet Zone</p> <p>Spinach</p> <p>Mozzarella</p> <p>Black Olives</p><p>Red Sauce</p></div>
@@ -182,7 +182,7 @@
                 <div class="construction-type">
                     <p>Cheese</p>
                     <p class="long-name-shrinker">Cheddar Cheese</p>
-                    <p class="long-name-shrinker"> White Cheese Blend</p>
+                    <p class="long-name-shrinker">Mozzarella</p>
                 </div>
             </div>
         </div>
@@ -192,7 +192,7 @@
         <div [ngClass]="{'iteam-info-show': salad }"  class="iteam-info-container">
             <div class="iteam-info">
                 <div class="salad-info">
-                    <p>House Salad</p> <p>$8.95</p> <p>Iceberg lettuce</p> <p>tomatos</p> <p>onions</p> <p>black olives</p> <p>cheddar cheese</p> <p>croutons $ 4.95</p>
+                    <p>House Salad</p> <p>$5.95</p> <p>Iceberg lettuce</p> <p>tomatos</p> <p>onions</p> <p>black olives</p> <p>cheddar cheese</p> <p>croutons $ 4.95</p>
                 </div>
                 <div class="salad-info">
                     <p>Ceaser Salad</p> <p>$7.95</p> <p>Romain lettuce</p> <p>ivarmesan cheese</p> <p>croutons</p> <p>ceaser dressing</p>
@@ -210,7 +210,7 @@
             </div>
             <div class="tapatios-info">
                 <p>Burrito</p>
-                <p>$6.25</p>
+                <p>$6.95</p>
                 <p>lettuce</p>
                 <p>Pico De Gallo</p>
                 <p>Sour Cream</p>
@@ -226,11 +226,11 @@
             </div>
             <div class="tapatios-info">
                 <p>Nachos</p>
-                <p>$6.25</p>
+                <p>$5.25</p>
                 <p>Cheese</p> 
                 <p>Mixed Cheese</p> 
                 <p>Pico De Gallo</p>
-                <p>lettuce </p> 
+                <p>lettuce</p> 
                 <p>Add meat for $3.00</p>
             </div>
             <p class="tapatios-meats">- Steak, Chicken, Ground Beef -</p>
@@ -239,19 +239,20 @@
         <li (click)="pasta = !pasta" class="food-links pasta"><p class="menu-iteam">Pasta</p></li>
         <div [ngClass]="{'iteam-info-show': pasta }"  class="iteam-info-container">
             <div class="pasta-info">
-                <p>Mac & Cheese</p>
-                <p>$7.95</p>
+                <p>Mac & Cheese Dinner</p>
+                <p>$9.95</p>
+                <p>Garlic Bread</p>
                 <p>Yummy Homemade Cheese Sauce</p>
             </div>
             <div class="pasta-info">
                 <p>Mostaccioli or Spaghetti</p>
-                <p>$7.95</p>
+                <p>$9.95</p>
                 <p>Marinera</p>
-                <p>- Chicken - $3.00 - MeatBalls -</p>
+                <p>- Chicken - $2.00 - MeatBalls -</p>
             </div>
             <div class="pasta-info">
                 <p>Fettuccine Special</p>
-                <p>$7.95</p>
+                <p>$9.95</p>
                 <p>Creamy Homemade Fettuccine alfredo Sauce</p>
                 <p>MMM MAMA MIA THATS GOOD!</p>
             </div>
@@ -303,15 +304,16 @@
         
         <li (click)="appetizer = !appetizer" class="food-links appetizer"><p class="menu-iteam">Start It Up</p></li>
         <div [ngClass]="{'iteam-info-show': appetizer }"  class="iteam-info-container appetizer-info">
-            <p>Garlic Bread $6.95</p>
-            <p>Cheese Bread $7.95</p>
+            <p>Garlic Bread $5.95</p>
+            <p>Cheese Bread $6.95</p>
             <p>Bosco Sticks $7.95</p>
-            <p>Fried Pickles $8.95</p>
-            <p>Jalapeńos Peppers $7.95</p>
-            <p>Doughballs $7.95</p>
-            <p>Mac'n Cheese Bites $7.95</p>
-            <p>Loaded Pizza Fries $7.95</p>
-            <p>Mozzarella Sticks $6.95</p>
+            <p>Fried Pickles $6.95</p>
+            <p>Jalapeńos Peppers $6.95</p>
+            <p>Doughballs $6.95</p>
+            <p>Mac'n Cheese Bites $6.95</p>
+            <p>Loaded Pizza Fries $6.95</p>
+            <p>Mozzarella Sticks $5.95</p>
+            <p>Fried Mushroom 5.95</p>
         </div>
         <li (click)="wing = !wing" class="food-links wing"><p class="menu-iteam">Wings</p></li>
         <div [ngClass]="{'iteam-info-show': wing }"  class="iteam-info-container">
@@ -320,6 +322,7 @@
                     Sauces: BBQ - Spicy BBQ - Garlic Paramesan - Buffalo - Dry Rub
                 </p>
                 <p>6 Wings - $5.95</p>
+                <p>8 wings - 7.95</p>
                 <p>12 Wings - $11.95</p>
                 <p>18 Wings - $16.95</p>
                 <p>25 Wings - $19.95</p>
