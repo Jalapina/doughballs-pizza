@@ -9,7 +9,7 @@ export class GalleryComponent implements OnInit {
 
   constructor() { }
   
-  imageUrlArray = ["../../assets/calzone.jpg","../../assets/sausage-pizza.jpg","../../assets/mushroom.jpg","../../assets/veggie-monster-pizza.jpg"]
+  imageUrlArray = ["../../assets/calzone.jpg","../../assets/sausage-pizza.jpg","../../assets/mushroom.jpg","../../assets/veggie-monster-pizza.jpg","../../assets/buff-off-pizza.jpg"]
 
   ngOnInit() {
   }
