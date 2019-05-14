@@ -10,6 +10,7 @@ import { MenuComponent } from './menu/menu.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { HttpClientModule } from '@angular/common/http';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -19,10 +20,11 @@ import { HttpClientModule } from '@angular/common/http';
     HomeComponent,
     MenuComponent,
     AboutUsComponent,
-    GalleryComponent
+    GalleryComponent,
+    AboutComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     SlideshowModule,
     HttpClientModule,
