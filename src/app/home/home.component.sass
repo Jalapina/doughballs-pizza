@@ -50,6 +50,7 @@
     animation-name: slide1
 .slide-2
     animation-name: slide2
+    font-size: 23px
 .slide-3
     animation-name: slide3   
 .home-intro
@@ -116,11 +117,14 @@
     background: #4e4c4a
 .phone-number
     text-decoration: underline
+
 @keyframes spin
     0%
+        transform: rotate(50deg)
+    50%
         transform: rotate(0deg)
     100%
-        transform: rotate(360deg)
+        transform: rotate(50deg)
         
 @keyframes slide1
     0%, 13%
